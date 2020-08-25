@@ -29,6 +29,10 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue 'string', "ApiKey", API_KEY_PLACES__CURRENT_PLACES_PICKER
+        }
+        debug {
+            resValue 'string', "ApiKey", API_KEY_PLACES__CURRENT_PLACES_PICKER
         }
     }
 }
